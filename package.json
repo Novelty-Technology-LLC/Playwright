@@ -1,0 +1,32 @@
+{
+  "name": "therapy-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:login": "playwright test tests/login.test.ts",
+    "test:dashboard": "playwright test tests/dashboard.test.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report",
+    "report:open": "playwright show-report --host 127.0.0.1",
+    "pw:install": "playwright install chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "@types/ssh2-sftp-client": "^9.0.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "mongodb": "^7.7.0",
+    "ssh2-sftp-client": "^12.1.1"
+  }
+}
